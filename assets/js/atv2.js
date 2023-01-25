@@ -1,6 +1,6 @@
 const separa = () => {
-  let caracter = document.getElementById('entrada').value
-  document.getElementById('entrada').value = ''
+  let caracter = document.getElementById('digiteCampo').value
+  document.getElementById('digiteCampo').value = ''
   switch(caracter){
   case '0':
   case '1':
@@ -12,8 +12,8 @@ const separa = () => {
   case '7':
   case '8':
   case '9':
-  document.getElementById('numero').value += ' ' + caracter
+  document.getElementById('caractereNumero').value += ' ' + caracter
   break;
   default:
-  document.getElementById('letra').value += ' ' + caracter
+  document.getElementById('caractereLetra').value += ' ' + caracter
 }}
